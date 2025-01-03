@@ -1,80 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikhil Garg | Data Management Analyst</title>
-    <link rel="stylesheet" href="styles.css">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="templatemo">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title id="title"></title>
+<!--
+Stimulus Template
+http://www.templatemo.com/tm-498-stimulus
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Nikhil Garg</h1>
-            <p>Data Management Analyst | SQL & Automation Expert</p>
-        </div>
-    </header>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-    <nav>
-        <ul class="menu">
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>I'm a Data Management Analyst with over 4 years of experience working with SQL databases, automations, and ETL processes. I have expertise in creating optimized stored procedures and handling complex data migrations.</p>
-        <p>Graduated from Pimpri Chinchwad College of Engineering (SPPU) with a cumulative GPA of 8.9. I've worked at BNY Mellon, Yardi Software, and Symantec, handling projects that range from database design to Python automation.</p>
-    </section>
+<!-- PRE LOADER -->
 
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>BNY Mellon, Senior Associate Data Management Analyst</h3>
-            <p><strong>Apr 2023 – Present</strong> | Pune, India</p>
-            <ul>
-                <li>Worked on SQL Server database design for PershingX and optimized stored procedures for batch jobs.</li>
-                <li>Handled ETL tasks, data migration, and the development of stored procedures to support Third Party Model Programs.</li>
-            </ul>
-        </div>
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
 
-        <div class="job">
-            <h3>Yardi Software, Software Analyst</h3>
-            <p><strong>Sep 2020 – Mar 2023</strong> | Pune, India</p>
-            <ul>
-                <li>Handled client requests for SQL report generation and system optimization.</li>
-                <li>Managed SQL data migration projects and provided troubleshooting support.</li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Proficient:</strong> SQL, MS SQL, SSIS, MySQL, Profiler</li>
-            <li><strong>Familiar:</strong> Python, HTML/CSS, C++, MongoDB, Oracle</li>
-        </ul>
-    </section>
+<!-- Navigation Section -->
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>PershingX Managed Investments:</strong> Designed proposals database and optimized ETL process in SQL Server.</li>
-            <li><strong>Al Ghurair Real Estate Project:</strong> Automated SQL workflows and handled data migration using Yardi Voyager tools.</li>
-        </ul>
-    </section>
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+     <div class="container">
 
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:nikhilravigarg@gmail.com">nikhilravigarg@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/nikhilravigarg/" target="_blank">Nikhil Garg</a></p>
-    </section>
+          <!-- navbar header -->
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+          </div>
 
-    <footer>
-        <p>&copy; 2024 Nikhil Garg. All rights reserved.</p>
-    </footer>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right" id="navbar-links">
+                    <!-- Links will be populated by JavaScript -->
+               </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<!-- Home Section -->
+
+<section id="home" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-thumb">
+                         <div class="section-title">
+                              <h4 class="wow fadeInUp" data-wow-delay="0.3s" id="home-welcome-text"></h4>
+                              <h1 class="wow fadeInUp" data-wow-delay="0.6s" id="home-intro-text"></h1>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s" id="home-description"></p>
+                              
+                              <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s" id="home-button-text"></a>
+                              
+                         </div>
+                    </div>
+               </div>
+
+
+          </div>
+     </div>
+</section>
+
+
+<!-- About Section -->
+
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
+                              <h1 id="about-title"></h1>
+                              <p class="color-yellow" id="about-subtitle"></p>
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.8s">
+                              <p id="about-description1"></p>
+                              <p id="about-description2"></p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image about-img"></div>
+               </div>
+
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="skill-thumb">
+                         <div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
+                              <h1 id="skills-title"></h1>
+                              <p class="color-white" id="skills-subtitle"></p>
+                         </div>
+
+                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s" id="skills-list">
+                         <!-- Skills will be populated by JavaScript -->
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+
+<!-- Experience Section -->
+
+<section id="experience" class="parallax-section">
+     <div class="container" >
+          <div class="row" >
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image experience-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white experience-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1 id="experience-title"></h1>
+                         </div>
+
+                         <div id="experience-list">
+                         <!-- Experience will be populated by JavaScript -->
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Education Section -->
+
+<section id="education" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white education-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1 id="education-title"></h1>
+                              <p class="color-white" id="education-subtitle"></p>
+                         </div>
+
+                         <div id="education-list">
+                         <!-- Education will be populated by JavaScript -->
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image education-img"></div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Quotes Section -->
+
+<section id="quotes" class="parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row"></div>
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.8s" id="quotes-text"></h2>
+                    <p class="wow fadeInUp" data-wow-delay="1s" id="quotes-author"></p>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Contact Section -->
+
+<section id="contact" class="parallax-section">
+     <div class="container">
+          <div class="row">
+				   <div class="col-md-6 col-sm-6">
+						<div class="background-image contact-img"></div>
+				   </div>
+
+				   <div class="bg-dark col-md-6 col-sm-6">
+						<div class="contact-thumb">
+
+							 <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
+								  <h3 class="color-white">Contact.</h3>
+								  <p><i class="fa fa-map-marker"></i> <span id="contact-address"></span></p>
+								  <p><i class="fa fa-envelope-o"></i> <a href="mailto:nikhilravigarg@gmail.com" id="contact-email"></a></p>
+								  <p><i class="fa fa-globe"></i> <a href="https://nikhilravigarg.github.io" id="contact-website"></a></p>
+								  <p><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/nikhilravigarg/" id="contact-linkedin"> nikhilravigarg</a></p>
+							 </div>
+
+						</div>
+				   </div>
+          </div>
+     </div>
+</section>
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                         <p id="footer-text"></p>
+                    </div>
+				<ul class="wow fadeInUp social-icon" data-wow-delay="2s" id="footer-social">
+                         <!-- Social icons will be populated by JavaScript -->
+                    </ul>
+               </div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/data-loader.js"></script>
+
+<script>
+const data = {
+  "title": "Nikhil Garg Portfolio",
+  "navbar": {
+    "brand": "Nikhil Garg",
+    "links": [
+      { "href": "#home", "text": "Home" },
+      { "href": "#about", "text": "About Me" },
+      { "href": "#experience", "text": "Experiences" },
+      { "href": "#quotes", "text": "Testimonial" },
+      { "href": "#contact", "text": "Contact" }
+    ]
+  },
+  "home": {
+    "introText": "Hello, I am <strong>Nikhil Garg</strong> currently based in Pune, India.",
+    "description": "I'm a passionate and lifelong learner, constantly seeking to expand my knowledge and skills in the ever-evolving field of software engineering.",
+    "buttonText": "Get Started"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Senior Associate Data Management Analyst",
+    "description1": "I am a skilled data management professional with expertise in Python, SQL and automation.",
+    "description2": "I excel at creating innovative solutions for task automations, ETLs and UI, driving efficiency and enhancing workflows.",
+    "skills": {
+      "title": "My Skills",
+      "subtitle": "Python . SQL . Data Management",
+      "list": [
+        { "name": "SQL", "percentage": 90 },
+        { "name": "Python", "percentage": 80 },
+        { "name": "Data Management", "percentage": 85 }
+      ]
+    }
+  },
+  "experience": {
+    "title": "My Experiences",
+    "subtitle": "Current and Previous companies along with my tasks",
+    "list": [
+      {
+        "role": "Senior Associate Data Management Analyst",
+        "duration": "Apr 2023 – Present",
+        "description": "Managed Investments Proposals, designed proposals database in SQL Server, worked on ETL tasks, and optimized stored procedures. Created Automations using Python and UIs in Python Django."
+      },
+      {
+        "role": "Software Analyst",
+        "duration": "Sep 2020 – Mar 2023",
+        "description": "Handled Custom Programming Requests, developed SQL Reports, created UDFs, SPs, Triggers, Views, and optimized SQL queries."
+      },
+      {
+        "role": "Intern",
+        "duration": "Jul 2019 – Dec 2019",
+        "description": "Developed Python automation, managed SQL and Python Django framework, and optimized Python applications."
+      }
+    ]
+  },
+  "education": {
+    "title": "My Education",
+    "subtitle": "Academic background",
+    "list": [
+      {
+        "degree": "Bachelor of Engineering in Computer Engineering",
+        "duration": "2016 – 2020",
+        "description": "Graduated from Pimpri Chinchwad College of Engineering, Pune"
+      }
+    ]
+  },
+  "quotes": {
+    "text": "Passionate about data, technology, and continuous improvement.",
+    "author": "Building strong partnerships to deliver innovative and impactful solutions."
+  },
+  "contact": {
+    "title": "Say hello..",
+    "subtitle": "Feel free to reach out to me.",
+    "address": "Pune, India",
+    "email": "nikhilravigarg@gmail.com",
+    "website": "nikhilravigarg.github.io",
+    "linkedin": "https://www.linkedin.com/in/nikhilravigarg/"
+  },
+  "footer": {
+    "text": "Copyright &copy; 2025 Nikhil Garg"
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('title').innerText = data.title;
+    const navbarLinks = document.getElementById('navbar-links');
+    data.navbar.links.forEach(link => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = link.href;
+        a.className = 'smoothScroll';
+        a.innerText = link.text;
+        li.appendChild(a);
+        navbarLinks.appendChild(li);
+    });
+
+    document.getElementById('home-intro-text').innerHTML = data.home.introText;
+    document.getElementById('home-description').innerText = data.home.description;
+    document.getElementById('home-button-text').innerText = data.home.buttonText;
+
+    document.getElementById('about-title').innerText = data.about.title;
+    document.getElementById('about-subtitle').innerText = data.about.subtitle;
+    document.getElementById('about-description1').innerText = data.about.description1;
+    document.getElementById('about-description2').innerText = data.about.description2;
+
+    document.getElementById('skills-title').innerText = data.about.skills.title;
+    document.getElementById('skills-subtitle').innerText = data.about.skills.subtitle;
+    const skillsList = document.getElementById('skills-list');
+    data.about.skills.list.forEach(skill => {
+        const skillDiv = document.createElement('div');
+        skillDiv.className = 'progress';
+        skillDiv.innerHTML = `
+            <strong>${skill.name}</strong>
+            <span class="color-white pull-right">${skill.percentage}%</span>
+            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="${skill.percentage}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.percentage}%;"></div>
+        `;
+        skillsList.appendChild(skillDiv);
+    });
+
+    document.getElementById('experience-title').innerText = data.experience.title;
+    const experienceList = document.getElementById('experience-list');
+    data.experience.list.forEach(exp => {
+        const expDiv = document.createElement('div');
+        expDiv.className = 'wow fadeInUp color-white media';
+        expDiv.innerHTML = `
+            <div class="media-object media-left">
+                <i class="fa fa-laptop"></i>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">${exp.role} <small>${exp.duration}</small></h3>
+                <p class="color-white">${exp.description}</p>
+            </div>
+        `;
+        experienceList.appendChild(expDiv);
+    });
+
+    document.getElementById('education-title').innerText = data.education.title;
+    document.getElementById('education-subtitle').innerText = data.education.subtitle;
+    const educationList = document.getElementById('education-list');
+    data.education.list.forEach(edu => {
+        const eduDiv = document.createElement('div');
+        eduDiv.className = 'wow fadeInUp color-white media';
+        eduDiv.innerHTML = `
+            <div class="media-object media-left">
+                <i class="fa fa-laptop"></i>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">${edu.degree} </h3>
+                <p class="color-white">${edu.description}</p>
+            </div>
+        `;
+        educationList.appendChild(eduDiv);
+    });
+
+    document.getElementById('quotes-text').innerText = data.quotes.text;
+    document.getElementById('quotes-author').innerText = data.quotes.author;
+
+    document.getElementById('contact-address').innerText = data.contact.address;
+    document.getElementById('contact-email').innerText = data.contact.email;
+    document.getElementById('contact-website').innerText = data.contact.website;
+
+    document.getElementById('footer-text').innerHTML = `${data.footer.text}`;
+});
+</script>
+
 </body>
 </html>
